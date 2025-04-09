@@ -1,28 +1,44 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
   
   button {
-    background: none;
-    border: none;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
     cursor: pointer;
-    margin: 0;
-    transition: 0.5s;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #e0e0e0;
   }
   
   /* Lista */
   .c-lista {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
   }
   
   .c-lista-pokemon {
-    background: aliceblue;
-    width: calc(50% - 5px);
-    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 160px;
+    padding: 16px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .c-lista-pokemon:hover {
+    transform: translateY(-4px);
   }
   
   /* Navegación */
@@ -31,20 +47,25 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    background: #222;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px 15px;
-    gap: 10px;
-    background: silver;
+    padding: 12px 0;
+    gap: 8px;
   }
   
   .c-nav-item {
-    width: calc(25% - 7.5px);
-    background: red;
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background: #444;
+    border-radius: 6px;
+    transition: background 0.3s ease;
   }
   
   .c-nav-item:hover {
-    color: yellow;
+    background: #666;
+    color: #ff0;
   }
   
