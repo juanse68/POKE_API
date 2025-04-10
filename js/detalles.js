@@ -1,4 +1,4 @@
-function mostrarDetalles(){
+function mostrarDetalles(id){
     const app = document.getElementById("app");
-    app.innerHTML = "Detalles";
+    app.innerHTML = "id";
 }
