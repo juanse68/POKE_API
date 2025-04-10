@@ -21,6 +21,6 @@ for (let i = 0; i < pokemones.length; i++) {
 app.innerHTML = Pokes;
 
 /*app.appendChild(buscador);*/
-app.appendChild(seccion);
+//app.appendChild(seccion);
 
 }
